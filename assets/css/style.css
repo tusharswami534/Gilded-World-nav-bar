@@ -62,20 +62,29 @@
     padding-top: 16px;
     padding-bottom: 16px;
 }
-.flex-grow-1{
+
+.flex-grow-1 {
     flex-grow: 2;
 
 }
-.gap-5{
+
+.gap-5 {
     gap: 48px;
 }
-.ps-1{
+
+.ps-1 {
     padding-left: 4px;
 }
-.mt-5{
+
+.mt-5 {
     margin-top: 48px;
 }
-.flex-direction-column{
+
+.gap-3 {
+    gap: 16px;
+}
+
+.flex-direction-column {
     flex-direction: column;
 }
 
@@ -104,6 +113,10 @@
 
 .position-fixed {
     position: fixed;
+}
+
+.top-0 {
+    top: 0;
 }
 
 
@@ -152,6 +165,89 @@
     color: var(--light);
 }
 
+/* blur-box-code */
+
+.blur-box {
+    max-width: 397px;
+    width: 100%;
+}
+
+.blur-box-name {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-3xl);
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--light);
+}
+
+.blur-box-head-number {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-md);
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--primary);
+}
+
+.blur-box-sub-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-xsm);
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--secondary);
+}
+
+.blur-box {
+    width: 397px;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+
+    /* border: 1px solid ;
+    border-image-source: linear-gradient(139.17deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%); */
+}
+
+.progress-line-blue {
+
+    width: 75%;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.progress-line-light {
+
+    width: 25%;
+    height: 2px;
+    background-color: var(--gray);
+}
+
+.blur-box-time {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-2xl);
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--light);
+}
+
+.blur-box-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--light);
+}
+
+.cap-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.cap-number {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-xl);
+    font-weight: 400;
+    color: var(--light);
+}
 
 
 @media (max-width:992px) {
@@ -166,7 +262,6 @@
         background-color: var(--dark);
         right: -100%;
         transition: all 300ms linear;
-
     }
 
     .nav-bar-lines {
@@ -185,5 +280,11 @@
 
     .gap-lg-3 {
         gap: 16px;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
