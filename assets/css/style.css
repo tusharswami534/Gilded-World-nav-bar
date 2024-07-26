@@ -165,6 +165,9 @@
 .gap-1{
     gap: 4px;
 }
+.z-1{
+    z-index: 1;
+}
 
 /* Nav bar  */
 .nav-bar-lines {
@@ -378,6 +381,9 @@
 
     .pt-5 {
         padding-top: 100px;
+    }
+    .mb-5{
+        margin-bottom: 48px;
     }
 }
 
