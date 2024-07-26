@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(/assets/css/root.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justfiy-content-center {
+    justify-content: center;
+}
+
+.justfiy-content-between {
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.hero-section-img {
+    background-image: url(/assets/img/png/Hero-section-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: center;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+
+/* Nav bar  */
+.nav-bar-lines {
+    width: 35px;
+    height: 5px;
+    background-color: var(--light);
+    margin-bottom: 5px;
+    display: none;
+}
+
+.header {
+    background: #0000001A;
+}
+
+.nav-bar-links {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    color: var(--light);
+}
+
+.nav-bar-discord-btn {
+    width: 181px;
+    height: 53px;
+    background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
+    border-radius: 79px;
+    border: none;
+    box-shadow: 0px 8px 30px 0px #1BABFE;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: var(--fs-xl);
+    font-weight: 400;
+    color: var(--light);
+}
+
+.hero-section-span {
+    color: var(-);
+}
+
+.hero-section-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-4xl);
+    font-weight: 400;
+    line-height: 91.8px;
+    color: var(--light);
+}
+
+
+
+@media (max-width:992px) {
+    .moble-viwe-nav-bar {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dark);
+        right: -100%;
+        transition: all 300ms linear;
+
+    }
+
+    .nav-bar-lines {
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+
+    .flex-lg-column {
+        flex-direction: column;
+    }
+
+    .check-box:checked~.moble-viwe-nav-bar {
+        right: 0;
+    }
+
+    .gap-lg-3 {
+        gap: 16px;
+    }
+}

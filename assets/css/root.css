@@ -1,0 +1,18 @@
+:root{
+    /* ==================font-size=============== */
+    --fs-xsm:16px;
+    --fs-sm:18px;
+    --fs-md:20px;
+    --fs-lg:22px;
+    --fs-xl:24px;
+    --fs-2xl:26px;
+    --fs-3xl:30px;
+    --fs-4xl:72px;
+    
+    /* ==================color=============== */
+    --dark:#000;
+    --light:#fff;
+    --primary:#1BABFE;
+    
+
+}
