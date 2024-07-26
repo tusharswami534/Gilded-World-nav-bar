@@ -62,6 +62,22 @@
     padding-top: 16px;
     padding-bottom: 16px;
 }
+.flex-grow-1{
+    flex-grow: 2;
+
+}
+.gap-5{
+    gap: 48px;
+}
+.ps-1{
+    padding-left: 4px;
+}
+.mt-5{
+    margin-top: 48px;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
 
 .hero-section-img {
     background-image: url(/assets/img/png/Hero-section-img.png);
@@ -125,7 +141,7 @@
 }
 
 .hero-section-span {
-    color: var(-);
+    color: var(--primary);
 }
 
 .hero-section-heading {
