@@ -14,5 +14,32 @@
     --light: #fff;
     --primary: #1BABFE;
     --secondary: #C7DADB;
-    --gray:#C4C4C4;
+    --gray: #C4C4C4;
+    --null: #4E828B;
+    --light-gray: #8C8C8C;
+}
+
+@media (max-width:992px) {
+    :root {
+        --fs-xsm: 12px;
+        --fs-sm: 14px;
+        --fs-md: 16px;
+        --fs-lg: 18px;
+        --fs-xl: 20px;
+        --fs-2xl: 22px;
+        --fs-3xl: 26px;
+        --fs-4xl: 50px;
+    }
+}
+@media (max-width:568px) {
+    :root {
+        --fs-xsm: 10px;
+        --fs-sm: 12px;
+        --fs-md: 14px;
+        --fs-lg: 16px;
+        --fs-xl: 18px;
+        --fs-2xl: 20px;
+        --fs-3xl: 24px;
+        --fs-4xl: 36px;
+    }
 }

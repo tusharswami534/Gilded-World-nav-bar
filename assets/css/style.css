@@ -8,6 +8,8 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* outline: 2px solid red; */
+
 
 }
 
@@ -84,6 +86,11 @@
     gap: 16px;
 }
 
+.px-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .flex-direction-column {
     flex-direction: column;
 }
@@ -119,6 +126,45 @@
     top: 0;
 }
 
+.h-70px {
+    height: 70px;
+}
+
+.w-h-18 {
+    width: 18px;
+    height: 18px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.border-top {
+    border-top: 1px solid var(--light-gray);
+}
+
+.border-bottom-cpa-box {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.h-15 {
+    height: 16px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.h-100px {
+    height: 100px;
+}
+.gap-1{
+    gap: 4px;
+}
 
 /* Nav bar  */
 .nav-bar-lines {
@@ -170,7 +216,20 @@
 .blur-box {
     max-width: 397px;
     width: 100%;
+    border-radius: 8px;
 }
+
+.blur-box-head {
+    width: 100%;
+    height: 70px;
+
+}
+
+.blur-box-time-out {
+    height: 70px;
+    width: 100%;
+}
+
 
 .blur-box-name {
     font-family: "Josefin Sans", sans-serif;
@@ -197,24 +256,23 @@
 }
 
 .blur-box {
-    width: 397px;
-    backdrop-filter: blur(20px);
+    max-width: 397px;
+    width: 100%;
+    backdrop-filter: blur(10px);
     background-color: transparent;
-
-    /* border: 1px solid ;
-    border-image-source: linear-gradient(139.17deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%); */
+    border: 1px solid var(--null);
 }
 
 .progress-line-blue {
 
-    width: 75%;
+    width: 70%;
     height: 2px;
     background-color: var(--primary);
 }
 
 .progress-line-light {
 
-    width: 25%;
+    width: 30%;
     height: 2px;
     background-color: var(--gray);
 }
@@ -247,6 +305,36 @@
     font-size: var(--fs-xl);
     font-weight: 400;
     color: var(--light);
+}
+
+.after-border::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    top: 0%;
+    left: 50%;
+    background-color: var(--light-gray);
+}
+
+.row-gap-30 {
+    row-gap: 30px;
+}
+
+.buy-tokens-btn {
+    width: 170px;
+    height: 50px;
+    border-radius: 79px;
+    background: linear-gradient(90deg, #815CC8 0%, #1BABFE 100%);
+    box-shadow: 0px 8px 30px 0px #1BABFE80;
+    border: none;
+    font-family: Josefin Sans;
+    font-size: var(--fs-xl);
+    color: var(--light);
+    font-weight: 400;
+    line-height: 24px;
+
+
 }
 
 
@@ -286,5 +374,19 @@
         width: 100%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .pt-5 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:568px) {
+    .blur-box {
+        width: 284px;
+    }
+
+    .blur-box-time {
+        font-size: var(--fs-xl);
     }
 }
