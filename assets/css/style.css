@@ -163,24 +163,30 @@
 .h-100px {
     height: 100px;
 }
-.gap-1{
+
+.gap-1 {
     gap: 4px;
 }
-.ps-4{
+
+.ps-4 {
     padding-left: 24px;
 }
-.z-1{
+
+.z-1 {
     z-index: 1;
 }
-.pt-100{
+
+.pt-100 {
     padding-top: 100px;
-  }
-  .pb-5{
+}
+
+.pb-5 {
     padding-bottom: 48px;
-  }
-  .white-space-no-wrap{
+}
+
+.white-space-no-wrap {
     white-space: nowrap;
-  }
+}
 
 /* Nav bar  */
 .nav-bar-lines {
@@ -201,6 +207,12 @@
     font-weight: 400;
     color: var(--light);
 }
+
+.nav-bar-links:hover {
+    -webkit-text-stroke: 2px;
+}
+
+
 
 .nav-bar-discord-btn {
     width: 181px;
@@ -370,14 +382,14 @@
         display: block;
         z-index: 2;
         position: relative;
+        border-radius: 10px;
+    }
+    .check-box:checked~.moble-viwe-nav-bar{
+        right: 0;
     }
 
     .flex-lg-column {
         flex-direction: column;
-    }
-
-    .check-box:checked~.moble-viwe-nav-bar {
-        right: 0;
     }
 
     .gap-lg-3 {
@@ -391,10 +403,11 @@
     }
 
 
-    .mb-5{
+    .mb-5 {
         margin-bottom: 48px;
     }
-    .ps-lg-0{
+
+    .ps-lg-0 {
         padding-left: 0;
     }
 }
