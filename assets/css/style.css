@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
     /* outline: 2px solid red; */
 
 
@@ -202,7 +203,6 @@
 }
 
 .nav-bar-links {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-lg);
     font-weight: 400;
     color: var(--light);
@@ -220,8 +220,6 @@
     background: linear-gradient(149.67deg, #815CC8 29.44%, #1BABFE 81.54%);
     border-radius: 79px;
     border: none;
-    box-shadow: 0px 8px 30px 0px #1BABFE;
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-xl);
     font-weight: 400;
     color: var(--light);
@@ -235,7 +233,6 @@
     font-family: "Poppins", sans-serif;
     font-size: var(--fs-4xl);
     font-weight: 400;
-    line-height: 91.8px;
     color: var(--light);
 }
 
@@ -260,7 +257,6 @@
 
 
 .blur-box-name {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-3xl);
     font-weight: 600;
     line-height: 30px;
@@ -268,7 +264,6 @@
 }
 
 .blur-box-head-number {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-md);
     font-weight: 600;
     line-height: 20px;
@@ -276,7 +271,6 @@
 }
 
 .blur-box-sub-heading {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-xsm);
     font-weight: 400;
     line-height: 16px;
@@ -306,7 +300,6 @@
 }
 
 .blur-box-time {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-2xl);
     font-weight: 600;
     line-height: 26px;
@@ -314,7 +307,6 @@
 }
 
 .blur-box-text {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 18px;
@@ -322,14 +314,12 @@
 }
 
 .cap-text {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-sm);
     font-weight: 400;
     color: var(--gray);
 }
 
 .cap-number {
-    font-family: "Josefin Sans", sans-serif;
     font-size: var(--fs-xl);
     font-weight: 400;
     color: var(--light);
@@ -349,18 +339,27 @@
     row-gap: 30px;
 }
 
+.transition-300ms {
+    transition: all 300ms;
+}
+
 .buy-tokens-btn {
     width: 170px;
     height: 50px;
     border-radius: 79px;
-    background: linear-gradient(90deg, #815CC8 0%, #1BABFE 100%);
-    box-shadow: 0px 8px 30px 0px #1BABFE80;
+    background-color: transparent;
     border: none;
     font-family: Josefin Sans;
     font-size: var(--fs-xl);
     color: var(--light);
     font-weight: 400;
     line-height: 24px;
+    background: linear-gradient(90deg, #815CC8 0%, #1BABFE 100%);
+
+}
+
+.hover-btn:hover {
+    box-shadow: 0px 8px 30px 0px #1BABFE80;
 }
 
 
@@ -384,7 +383,8 @@
         position: relative;
         border-radius: 10px;
     }
-    .check-box:checked~.moble-viwe-nav-bar{
+
+    .check-box:checked~.moble-viwe-nav-bar {
         right: 0;
     }
 
@@ -409,6 +409,25 @@
 
     .ps-lg-0 {
         padding-left: 0;
+    }
+
+    label>span {
+        transition: all 200ms linear;
+    }
+
+    input:checked~label span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    input:checked~label span:first-child {
+        transform: rotate(35deg);
+        transform-origin: left;
+    }
+
+    input:checked~label span:last-child {
+        transform: rotate(-35deg);
+        transform-origin: left;
     }
 }
 
