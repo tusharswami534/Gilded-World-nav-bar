@@ -10,8 +10,6 @@
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
     /* outline: 2px solid red; */
-
-
 }
 
 .container {
@@ -65,11 +63,6 @@
 .py-3 {
     padding-top: 16px;
     padding-bottom: 16px;
-}
-
-.flex-grow-1 {
-    flex-grow: 2;
-
 }
 
 .gap-5 {
